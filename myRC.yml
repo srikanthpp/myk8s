@@ -3,15 +3,15 @@ kind: ReplicationController
 metadata:
   name: mynginx-rc
 spec:
-  replicas: 2
+  replicas: 3
   selector:
      app: mynginx
-     version: 2.6.2
+     version: 2.6.1
   template:
     metadata:
        labels:
           app: mynginx
-          version: 2.6.2
+          version: 2.6.1
     spec:
       containers:
       - name: mynginxcontainer
